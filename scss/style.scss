@@ -1,0 +1,16 @@
+@use "custom";
+
+// IMPORT COMPONENTS
+@use "components/animation";
+@use "components/buttons";
+@use "components/mixins";
+@use "components/typography.scss";
+
+// IMPORT SECTIONS
+@use "sections/navbar";
+@use "sections/hero";
+@use "sections/about";
+@use "sections/professional";
+@use "sections/skills";
+@use "sections/contact";
+@use "sections/footer";
