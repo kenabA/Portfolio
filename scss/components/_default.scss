@@ -1,0 +1,83 @@
+@use "../custom" as *;
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.section {
+  padding-block: 96px !important;
+}
+
+.img-box {
+  width: 50%;
+  height: auto;
+  img {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.para {
+  line-height: 1.9;
+}
+
+.poster::after {
+  content: "Poster";
+  color: map-get($theme-colors, "primary-light");
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #ede6e3;
+  padding: 4px 12px;
+}
+.poster {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.web::after {
+  content: "Web";
+  color: map-get($theme-colors, "primary-light");
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #ede6e3;
+  padding: 4px 12px;
+}
+.web {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.animation::after {
+  content: "Animation";
+  color: map-get($theme-colors, "primary-light");
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #ede6e3;
+  padding: 4px 12px;
+}
+.animation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form {
+  .input,
+  textarea {
+    box-shadow: 0px 2px 12px #00000010;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: none;
+    outline: none;
+  }
+}
+
+.navbar-nav {
+  flex-direction: row !important;
+  justify-content: end;
+}

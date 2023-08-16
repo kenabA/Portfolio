@@ -1,12 +1,14 @@
 // MY THEME COLORS
+$brown: rgba(98, 71, 61);
 $brown-dark: #4a2c20;
 $brown-light: #855f4d;
 $brown-lighter: #b6826a;
+$brown-lightest: #ede6e3;
+
 $cream: #eadbb5;
+$cream-tint: #e3dfd3;
 
 // WHITE & GREY
-$white: #fff;
-$gray-50: #f7f7f7;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
@@ -16,12 +18,35 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
-$black: #000;
 
+// DEFAULT THEME COLOR
 $primary: $brown-dark;
-$primary-light: $brown-light;
-$primary-lighter: $brown-lighter;
 $secondary: $cream;
+$white: #f7f7f7;
+$black: #333;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// CUSTOM THEME COLORS
+$custom-theme-colors: (
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+  // THEMES
+  "brown": $brown,
+  "primary-light": $brown-light,
+  "primary-lighter": $brown-lighter,
+  "primary-lightest": $brown-lightest,
+  "secondary-light": $cream-tint,
+);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 // IMPORT BOOTSTRAP
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

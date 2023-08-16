@@ -3,6 +3,9 @@
 // IMPORT COMPONENTS
 @use "components/animation";
 @use "components/buttons";
+@use "components/tabs";
+@use "components/default";
+@use "components/card";
 @use "components/mixins";
 @use "components/typography.scss";
 
@@ -11,6 +14,7 @@
 @use "sections/hero";
 @use "sections/about";
 @use "sections/professional";
+@use "sections/project";
 @use "sections/skills";
 @use "sections/contact";
 @use "sections/footer";

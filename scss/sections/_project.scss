@@ -1,0 +1,44 @@
+@use "../custom" as *;
+
+#section-projects {
+  @include media-breakpoint-down(md) {
+    h2 {
+      font-size: 36px;
+      text-align: center;
+    }
+    h3 {
+      font-size: 24px;
+      text-align: center;
+    }
+    .fa--icon-box {
+      text-align: center;
+    }
+    p {
+      line-height: 2.2;
+      font-size: 16px;
+    }
+
+    .header-para {
+      text-align: center;
+    }
+    .btn-bx {
+      text-align: center;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    h2 {
+      font-size: 36px;
+      text-align: center;
+    }
+    .header-para {
+      text-align: center;
+    }
+    p {
+      line-height: 2.2;
+      font-size: 16px;
+    }
+    .btn-bx {
+      text-align: center;
+    }
+  }
+}

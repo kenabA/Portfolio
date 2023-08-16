@@ -1,0 +1,42 @@
+@use "../custom" as *;
+
+#section-professional {
+  background-image: linear-gradient(
+      rgba(74, 44, 32, 0.8),
+      rgba(74, 44, 32, 0.8)
+    ),
+    url(../../images/profession.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  @include media-breakpoint-down(md) {
+    h2 {
+      font-size: 36px;
+      text-align: center;
+    }
+    p {
+      line-height: 2.2;
+      font-size: 16px;
+      text-align: center;
+    }
+    .btn-bx {
+      text-align: center;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    h2 {
+      font-size: 36px;
+      text-align: center;
+    }
+    p {
+      line-height: 2.2;
+      font-size: 16px;
+      text-align: center;
+    }
+    .btn-bx {
+      text-align: center;
+    }
+  }
+}

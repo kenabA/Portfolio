@@ -1,0 +1,93 @@
+@use "../custom" as *;
+
+.landing-page {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../../images/performance.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .navbar {
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .navbar-toggler {
+      border: none;
+      --bs-navbar-toggler-focus-width: 0 !important;
+    }
+  }
+
+  a {
+    color: $gray-400 !important;
+    font-weight: 400;
+    transition: all 0.2s;
+    img {
+      width: 54px;
+      height: auto;
+    }
+  }
+  .nav-items {
+    a:hover {
+      color: $gray-100 !important;
+      font-weight: 400;
+    }
+  }
+
+  .section-hero {
+    h1 {
+      margin-bottom: 24px;
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+    }
+    p {
+      margin-bottom: 32px;
+    }
+    .hero-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @include media-breakpoint-down(md) {
+    a {
+      font-size: 20px;
+    }
+    .nav-items {
+      a {
+        font-size: 16px;
+      }
+    }
+    .section-hero {
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        line-height: 2.2;
+        font-size: 16px;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    a {
+      font-size: 18px;
+    }
+    .nav-items {
+      a {
+        font-size: 16px;
+      }
+    }
+
+    .section-hero {
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        line-height: 2.2;
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@use "../custom" as *;
+
+#section-footer {
+  padding-bottom: 96px;
+
+  .footer-img {
+    width: 50px;
+    border-radius: 50%;
+    img {
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    h2 {
+      font-size: 36px;
+      text-align: center;
+    }
+    p {
+      line-height: 2.2;
+      font-size: 12px;
+      text-align: center;
+    }
+    .btn-bx {
+      text-align: center;
+    }
+    .ftr {
+      justify-content: center !important;
+
+      .brands {
+        justify-content: center !important;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    h2 {
+      font-size: 36px;
+      text-align: center;
+    }
+    p {
+      line-height: 2.2;
+      font-size: 12px;
+      text-align: center;
+    }
+    .btn-bx {
+      text-align: center;
+    }
+    .ftr {
+      justify-content: center !important;
+
+      .brands {
+        justify-content: center !important;
+      }
+    }
+  }
+}

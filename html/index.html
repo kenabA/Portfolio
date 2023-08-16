@@ -3,8 +3,796 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon.png"
+    />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+    <style>
+      .hidden {
+        opacity: 0;
+        transition: all 2s;
+      }
+      .show {
+        opacity: 1;
+      }
+    </style>
     <title>kenabey</title>
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER -->
+    <header class="landing-page" id="landing-page">
+      <!-- HEADER SECTION -->
+      <section class="hidden">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light py-3">
+          <div class="container">
+            <a class="navbar-brand" href="#section-hero">
+              <img src="../images/logo.png" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav gap-3 nav-items">
+                <a
+                  class="nav-link text-white font-18"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+                <a class="nav-link font-18" href="#section-about">About</a>
+                <a class="nav-link font-18" href="#section-skills">Skills</a>
+                <a class="nav-link font-18" href="#section-projects"
+                  >Projects</a
+                >
+                <a class="nav-link font-18" href="#section-contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- HERO SECTION -->
+      <section class="section-hero hidden" id="section-hero">
+        <div class="container">
+          <div class="text-center hero-container">
+            <h1 class="text-alpha text-white hidden">
+              Get to know <span class="text-primary-lighter">केनबे!</span>
+            </h1>
+            <p class="font-18 fw-normal text-gray-400 para hidden">
+              Welcome to my website! Here, I present a digital portrayal,
+              granting you deeper insights into my persona. Enjoy!
+            </p>
+            <button class="btn-1 hidden">
+              <span class="me-2"> <i class="fa-solid fa-phone"></i></span
+              >contact me
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- SECTION - ABOUT ME -->
+      <section class="section bg-white" id="section-about">
+        <div class="container hidden">
+          <div class="row gy-5 flex-row-reverse">
+            <div
+              class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center"
+            >
+              <div class="img-box">
+                <img src="../images/singing.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div>
+                <p class="font-16 text-primary-lighter fw-normal mb-2">
+                  KNOW MORE ABOUT ME
+                </p>
+                <h2 class="text-beta text-primary mb-4">About Me</h2>
+                <p class="font-18 para text-black mb-5">
+                  Teenagers may have a lot of goals, as these goals can differ
+                  for every individual hustler out there. Do you want to know
+                  what my goal is? Allow me to take you into my world, where I
+                  define myself completely and reveal what I seek in the near
+                  future.
+                </p>
+                <div class="btn-bx">
+                  <button class="btn-1 btn-2">read more &rarr;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION - PROFESSIONALISM -->
+      <section class="section" id="section-professional">
+        <div class="container hidden">
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <div>
+                <p class="font-16 text-white mb-2">MY PATH TO SUCCESS</p>
+                <h2 class="text-beta text-secondary mb-4">
+                  Follow my professional journey
+                </h2>
+                <p class="para font-18 text-gray-400 mb-4">
+                  Join me on an exciting voyage through my career growth and
+                  accomplishments. To stay updated with my latest professional
+                  endeavors, connect with me on LinkedIn.
+                </p>
+                <div class="btn-bx">
+                  <button class="btn-1">
+                    <span><i class="fa-solid fa-user me-2"></i></span> linked in
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION - SKILLS -->
+      <section class="section bg-white" id="section-skills">
+        <div class="container hidden">
+          <div class="row gx-5 gy-1">
+            <div class="col-xl-6 col-12 d-flex align-items-center">
+              <div>
+                <p class="font-16 text-primary-lighter fw-normal mb-2">
+                  CHECKOUT MY SKILLS
+                </p>
+                <h2 class="text-beta text-primary fw-bold mb-4">
+                  My Expertise
+                </h2>
+                <p class="font-18 para text-black mb-5">
+                  As a developer and designer, I am a dedicated team player,
+                  proficient in crafting innovative solutions with an eye for
+                  aesthetics and user experience.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-12">
+              <div class="row gy-4">
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="card">
+                    <div class="fa--icon-box">
+                      <i class="fa-solid fa-pen-nib fa--icon"></i>
+                    </div>
+                    <h3 class="text-gramma text-primary-light">Design</h3>
+                    <p class="para text-black">
+                      Designing is my creative superpower that brings ideas to
+                      life through visual expression.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="card">
+                    <div class="fa--icon-box">
+                      <i class="fa-solid fa-code fa--icon"></i>
+                    </div>
+                    <h3 class="text-gramma text-primary-light">Development</h3>
+                    <p class="para text-black">
+                      Combining design finesse and coding, I craft captivating
+                      digital experiences.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="card">
+                    <div class="fa--icon-box">
+                      <i class="fa-solid fa-users fa--icon"></i>
+                    </div>
+                    <h3 class="text-gramma text-primary-light">
+                      Social Fluency
+                    </h3>
+                    <p class="para text-black">
+                      Effortlessly weaving connections, my communication skills
+                      engage diverse audiences.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="card">
+                    <div class="fa--icon-box">
+                      <i class="fa-solid fa-music fa--icon"></i>
+                    </div>
+                    <h3 class="text-gramma text-primary-light">Music</h3>
+                    <p class="para text-black">
+                      I have honed my skills in playing various musical
+                      instruments, including the keyboard, guitar, and drums.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION - PROJECTS -->
+      <section class="section bg-brown" id="section-projects">
+        <div class="container hidden">
+          <div>
+            <div class="row">
+              <div class="col-lg-8 col-12">
+                <p class="font-16 text-white header-para mb-2">
+                  VIEW MY PROJECTS
+                </p>
+                <h2 class="text-beta text-secondary mb-4">Some Projects</h2>
+                <p class="para font-18 text-gray-200 header-para mb-5">
+                  Discover a selection from my diverse portfolio, highlighting
+                  my expertise in web development and creative design.
+                </p>
+              </div>
+            </div>
+            <div class="tabs">
+              <div class="nav-container mb-5">
+                <ul
+                  class="nav border justify-content-between bg-white nav-pills mb-3 flex-nowrap align-items-center"
+                  id="pills-tab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                    >
+                      All
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                    >
+                      Poster Desgin
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-after-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-after"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-after"
+                      aria-selected="false"
+                    >
+                      Animation
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-web-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-web"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-web"
+                      aria-selected="false"
+                    >
+                      Web Application
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                >
+                  <div class="row gy-4">
+                    <div class="col-lg-6 col-xl-4 col-md-12 col-12">
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/weatherforecasting.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light web">
+                          Weather Forecasting Web App
+                        </h4>
+                        <p>
+                          A weather forecasting web application made by the use
+                          of HTML, CSS, JS, PHP and mySQL.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-md-12 col-12">
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/staticweb.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light web">
+                          Static Software Site
+                        </h4>
+                        <p>
+                          A website, that contains various softwares that the
+                          students require.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-md-12 col-12">
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/mandalabliss.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light poster">
+                          Mandala Bliss
+                        </h4>
+                        <p>
+                          An event poster made by using Adobe Photoshop 2023.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+
+                    <div
+                      id="collapseExample"
+                      class="col-lg-6 collapse col-xl-4 col-md-12 col-12"
+                    >
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/frontend.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light poster">
+                          Front End 2.0
+                        </h4>
+                        <p>
+                          An event poster made by using Adobe Photoshop 2023.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      id="collapseExample"
+                      class="col-lg-6 collapse col-xl-4 col-md-12 col-12"
+                    >
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/eid.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light poster">
+                          Eid Mubarak
+                        </h4>
+                        <p>
+                          A festival poster made by using Adobe Photoshop 2023.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      id="collapseExample"
+                      class="col-lg-6 collapse col-xl-4 col-md-12 col-12"
+                    >
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/shivratri.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light poster">
+                          Shivratri
+                        </h4>
+                        <p>
+                          An occasional poster made by using Adobe Photoshop
+                          2023.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      id="collapseExample"
+                      class="collapse col-lg-6 col-xl-4 col-md-12 col-12"
+                    >
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/personalintro.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light animation">
+                          Personal Intro
+                        </h4>
+                        <p>
+                          Created an intro for personal use with Adobe After
+                          Effects.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      id="collapseExample"
+                      class="collapse col-lg-6 col-xl-4 col-md-12 col-12"
+                    >
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/uiintro.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light animation">
+                          Community Intro
+                        </h4>
+                        <p>
+                          Created an intro for UI Visuals Community, one of the
+                          seven communities of Herald College Kathmandu with the
+                          help of Adobe After Effects.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-center">
+                        <button
+                          class="btn text-white rounded-5 border-white"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseExample"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          Load More
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                >
+                  <div class="row gy-4">
+                    <div class="col-lg-6 col-xl-4 col-md-12 col-12">
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/mandalabliss.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light poster">
+                          Mandala Bliss
+                        </h4>
+                        <p>
+                          An event poster made by using Adobe Photoshop 2023.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-md-12 col-12">
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/frontend.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light poster">
+                          Front End 2.0
+                        </h4>
+                        <p>
+                          An occasional poster made by using Adobe Photoshop
+                          2023.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-md-12 col-12">
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/eid.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light poster">
+                          Eid Mubarak
+                        </h4>
+                        <p>
+                          A festival poster made by using Adobe Photoshop 2023.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-md-12 col-12">
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/shivratri.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light poster">
+                          Shivratri
+                        </h4>
+                        <p>
+                          An occasional poster made by using Adobe Photoshop
+                          2023.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-after"
+                  role="tabpanel"
+                  aria-labelledby="pills-after-tab"
+                >
+                  <div class="row gy-4">
+                    <div class="col-lg-6 col-xl-4 col-md-12 col-12">
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/personalintro.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light animation">
+                          Personal Intro
+                        </h4>
+                        <p>
+                          Created an intro for personal use with Adobe After
+                          Effects.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-md-12 col-12">
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/uiintro.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light animation">
+                          Community Intro
+                        </h4>
+                        <p>
+                          Created an intro for UI Visuals Community, one of the
+                          seven communities of Herald College Kathmandu with the
+                          help of Adobe After Effects.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-web"
+                  role="tabpanel"
+                  aria-labelledby="pills-web-tab"
+                >
+                  <div class="row gy-4">
+                    <div class="col-lg-6 col-xl-4 col-md-12 col-12">
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/weatherforecasting.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light web">
+                          Weather Forecasting Web App
+                        </h4>
+                        <p>
+                          A weather forecasting web application made by the use
+                          of HTML, CSS, JS, PHP and mySQL.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-md-12 col-12">
+                      <div class="card-2">
+                        <div class="img-card-box">
+                          <img src="../images/staticweb.jpg" alt="" />
+                        </div>
+                        <h4 class="text-delta text-primary-light web">
+                          Static Software Site
+                        </h4>
+                        <p>
+                          A website, that contains various softwares that the
+                          students require.
+                        </p>
+                        <button class="btn-3">
+                          <span><i class="fa-solid fa-eye me-1"></i></span
+                          >Preview
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION - CONTACT -->
+      <section class="section bg-white" id="section-contact">
+        <div class="container hidden">
+          <div class="row gx-5 gy-1">
+            <div class="col-xl-6 col-12 d-flex align-items-center">
+              <div>
+                <p class="font-16 text-primary-lighter fw-normal mb-2">
+                  CONTACT ME
+                </p>
+                <h2 class="text-beta text-primary fw-bold mb-4">
+                  Get in touch with me.
+                </h2>
+                <p class="font-18 para text-black mb-5">
+                  Feel free to reach out and connect with me! Whether you have a
+                  project in mind, a collaboration opportunity, or just want to
+                  say hello, I'd love to hear from you.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-6 col-12 bg-primary-lightest form-container rounded-5 p-5"
+            >
+              <form action="" class="form">
+                <div class="row gy-4 gx-5">
+                  <div class="col-lg-6 col-12 col-xl-6">
+                    <div class="d-flex gap-2 flex-column">
+                      <label for="fname" class="label">First Name: </label>
+                      <input
+                        type="text"
+                        id="fname"
+                        placeholder="Enter your first name"
+                        class="input"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-12 col-xl-6">
+                    <div class="d-flex gap-2 flex-column">
+                      <label for="lname" class="label">Last Name: </label>
+                      <input
+                        type="text"
+                        id="lname"
+                        placeholder="Enter your last name"
+                        class="input"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-12 col-xl-6">
+                    <div class="d-flex gap-2 flex-column">
+                      <label for="email" class="label">Email: </label>
+                      <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        class="input"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-12 col-xl-6">
+                    <div class="d-flex gap-2 flex-column">
+                      <label for="phone" class="label">Phone Number: </label>
+                      <input
+                        type="text"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        class="input"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-12 col-xl-12">
+                    <div class="d-flex gap-2 flex-column">
+                      <label for="msg" class="label">Message: </label>
+                      <textarea
+                        name=""
+                        id="msg"
+                        cols="30"
+                        rows="5"
+                        placeholder="Enter your message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-12 col-xl-12">
+                    <div class="btn-bx">
+                      <button class="btn-4 w-100">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="section-footer" id="section-footer">
+      <div class="container">
+        <div class="row text-primary gy-5">
+          <div
+            class="col-12 col-md-4 ftr col-xl-4 col-lg-4 text-end d-flex flex-column justify-content-center gap-4"
+          >
+            <div class="d-flex brands align-items-center gap-5 w-100">
+              <i class="fa-brands fa-facebook font-24"></i>
+              <i class="fa-brands fa-instagram font-24"></i>
+              <i class="fa-brands fa-twitter font-24"></i>
+              <i class="fa-brands fa-linkedin font-24"></i>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-4 ftr col-xl-4 col-lg-4 d-flex justify-content-center align-items-center"
+          >
+            <div class="footer-img">
+              <a href="#landing-page">
+                <img src="../images/Logoblack.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-4 col-xl-4 ftr col-lg-4 text-end d-flex align-items-center justify-content-end"
+          >
+            <p class="font-12">© 2023 Kenab Kushal KC. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
 </html>
