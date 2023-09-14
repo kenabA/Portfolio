@@ -15,25 +15,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+    <title>kenabey</title>
     <style>
-      .hidden {
-        opacity: 0;
-        transition: all 2s;
-      }
-      .show {
-        opacity: 1;
+      html {
+        overflow-x: hidden !important;
       }
     </style>
-    <title>kenabey</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- HEADER -->
     <header class="landing-page" id="landing-page">
       <!-- HEADER SECTION -->
-      <section class="hidden">
+      <section data-aos="fade-in">
         <nav class="navbar sticky-top navbar-expand-lg navbar-light py-3">
           <div class="container">
-            <a class="navbar-brand" href="#section-hero">
+            <a class="navbar-brand" href="#landing-page">
               <img src="../images/logo.png" alt="" />
             </a>
             <button
@@ -60,9 +57,6 @@
                 >
                 <a class="nav-link font-18" href="#section-about">About</a>
                 <a class="nav-link font-18" href="#section-skills">Skills</a>
-                <a class="nav-link font-18" href="#section-projects"
-                  >Projects</a
-                >
                 <a class="nav-link font-18" href="#section-contact">Contact</a>
               </div>
             </div>
@@ -70,39 +64,51 @@
         </nav>
       </section>
       <!-- HERO SECTION -->
-      <section class="section-hero hidden" id="section-hero">
+      <section
+        class="section-hero"
+        id="section-hero"
+        data-aos="fade-in"
+        data-aos-delay="500"
+      >
         <div class="container">
           <div class="text-center hero-container">
-            <h1 class="text-alpha text-white hidden">
-              Get to know <span class="text-primary-lighter">केनबे!</span>
+            <h1 class="text-alpha text-white">
+              Get to know <span class="text-primary-lighter">केनब!</span>
             </h1>
-            <p class="font-18 fw-normal text-gray-400 para hidden">
+            <p class="font-18 fw-normal text-gray-400 para">
               Welcome to my website! Here, I present a digital portrayal,
               granting you deeper insights into my persona. Enjoy!
             </p>
-            <button class="btn-1 hidden">
-              <span class="me-2"> <i class="fa-solid fa-phone"></i></span
-              >contact me
-            </button>
+            <a class="btn-1" href="#section-contact">
+              <span class="me-2"> <i class="fa-solid fa-message"></i></span>Say
+              What's Up!
+            </a>
           </div>
         </div>
       </section>
     </header>
-
     <!-- MAIN -->
     <main>
+      <div class="top-btn">
+        <a href="#landing-page">
+          <button class="btn-top btn bg-white text-primary">
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+        </a>
+      </div>
       <!-- SECTION - ABOUT ME -->
       <section class="section bg-white" id="section-about">
-        <div class="container hidden">
+        <div class="container">
           <div class="row gy-5 flex-row-reverse">
             <div
-              class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center"
+              class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center ani"
+              data-aos="fade-left"
             >
               <div class="img-box">
                 <img src="../images/singing.jpg" alt="" />
               </div>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12 ani" data-aos="fade-right">
               <div>
                 <p class="font-16 text-primary-lighter fw-normal mb-2">
                   KNOW MORE ABOUT ME
@@ -116,7 +122,9 @@
                   future.
                 </p>
                 <div class="btn-bx">
-                  <button class="btn-1 btn-2">read more &rarr;</button>
+                  <a href="readmore.html" target="_blank" class="btn-2"
+                    >read more &rarr;</a
+                  >
                 </div>
               </div>
             </div>
@@ -124,10 +132,14 @@
         </div>
       </section>
       <!-- SECTION - PROFESSIONALISM -->
-      <section class="section" id="section-professional">
-        <div class="container hidden">
+      <section class="section" id="section-professional" data-aos="fade-in">
+        <div class="container">
           <div class="row">
-            <div class="col-lg-8 col-12">
+            <div
+              class="col-lg-8 col-12 ani"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <div>
                 <p class="font-16 text-white mb-2">MY PATH TO SUCCESS</p>
                 <h2 class="text-beta text-secondary mb-4">
@@ -139,9 +151,13 @@
                   endeavors, connect with me on LinkedIn.
                 </p>
                 <div class="btn-bx">
-                  <button class="btn-1">
+                  <a
+                    class="btn-1"
+                    href="https://www.linkedin.com/in/kenab-kushal-k-c-37098225a/"
+                    target="_blank"
+                  >
                     <span><i class="fa-solid fa-user me-2"></i></span> linked in
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -150,9 +166,12 @@
       </section>
       <!-- SECTION - SKILLS -->
       <section class="section bg-white" id="section-skills">
-        <div class="container hidden">
+        <div class="container">
           <div class="row gx-5 gy-1">
-            <div class="col-xl-6 col-12 d-flex align-items-center">
+            <div
+              class="col-xl-6 ani col-12 d-flex align-items-center"
+              data-aos="fade-right"
+            >
               <div>
                 <p class="font-16 text-primary-lighter fw-normal mb-2">
                   CHECKOUT MY SKILLS
@@ -167,7 +186,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-xl-6 col-12">
+            <div class="col-xl-6 col-12 ani" data-aos="fade-left">
               <div class="row gy-4">
                 <div class="col-lg-6 col-md-6 col-12">
                   <div class="card">
@@ -225,8 +244,8 @@
         </div>
       </section>
       <!-- SECTION - PROJECTS -->
-      <section class="section bg-brown" id="section-projects">
-        <div class="container hidden">
+      <!-- <section class="section bg-brown" id="section-projects">
+        <div class="container">
           <div>
             <div class="row">
               <div class="col-lg-8 col-12">
@@ -663,12 +682,15 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- SECTION - CONTACT -->
       <section class="section bg-white" id="section-contact">
-        <div class="container hidden">
+        <div class="container">
           <div class="row gx-5 gy-1">
-            <div class="col-xl-6 col-12 d-flex align-items-center">
+            <div
+              class="ani col-xl-6 col-12 d-flex align-items-center"
+              data-aos="fade-right"
+            >
               <div>
                 <p class="font-16 text-primary-lighter fw-normal mb-2">
                   CONTACT ME
@@ -684,7 +706,8 @@
               </div>
             </div>
             <div
-              class="col-xl-6 col-12 bg-primary-lightest form-container rounded-5 p-5"
+              class="col-xl-6 ani col-12 bg-primary-lightest form-container rounded-5 p-5"
+              data-aos="fade-left"
             >
               <form action="" class="form">
                 <div class="row gy-4 gx-5">
@@ -746,7 +769,7 @@
                   </div>
                   <div class="col-lg-12 col-12 col-xl-12">
                     <div class="btn-bx">
-                      <button class="btn-4 w-100">Send</button>
+                      <a href="#" class="btn-4 w-100">Send</a>
                     </div>
                   </div>
                 </div>
@@ -756,9 +779,13 @@
         </div>
       </section>
     </main>
-
     <!-- FOOTER -->
-    <footer class="section-footer" id="section-footer">
+    <footer
+      class="section-footer"
+      id="section-footer"
+      data-aos="fade-in"
+      data-aos-offset="100"
+    >
       <div class="container">
         <div class="row text-primary gy-5">
           <div
@@ -794,5 +821,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="../assets/js/script.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>

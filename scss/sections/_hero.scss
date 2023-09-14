@@ -18,9 +18,10 @@
       --bs-navbar-toggler-focus-width: 0 !important;
     }
   }
-
-  a {
+  .nav-link {
     color: $gray-400 !important;
+  }
+  a {
     font-weight: 400;
     transition: all 0.2s;
     img {
@@ -71,6 +72,11 @@
     }
   }
   @include media-breakpoint-down(sm) {
+    .hero-container {
+      position: relative;
+      width: 100%;
+      padding-inline: 24px;
+    }
     a {
       font-size: 18px;
     }

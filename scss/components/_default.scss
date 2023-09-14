@@ -81,3 +81,49 @@
   flex-direction: row !important;
   justify-content: end;
 }
+
+.btn-top {
+  bottom: 5%;
+  right: 5%;
+  z-index: 9999;
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-btn.hide {
+  opacity: 0;
+  transition: all 0.2s ease !important;
+}
+
+.top-btn {
+  transition: all 1s ease !important;
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+// .hidden-2 {
+//   opacity: 0;
+//   transition: all 2s;
+//   transition-delay: 0.4s;
+// }
+// .hidden-3 {
+//   opacity: 0;
+//   transition: all 2s;
+//   transition-delay: 0.8s;
+// }
+// .hidden-4 {
+//   opacity: 0;
+//   transition: all 2s;
+//   transition-delay: 1.2s;
+// }
+.show {
+  opacity: 1;
+}
