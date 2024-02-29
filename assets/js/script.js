@@ -32,14 +32,13 @@ const observer2 = new IntersectionObserver(
 );
 observer2.observe(section);
 
+// Animation on different device sizes
 var viewportWidth = window.innerWidth;
 animation = document.querySelectorAll(".ani");
 
 if (viewportWidth < 960) {
-  console.log(viewportWidth);
   animation.forEach(function (animation) {
     animation.removeAttribute("data-aos");
     animation.setAttribute("data-aos", "fade-in");
-    console.log(animation.getAttribute("data-aos"));
   });
 }

@@ -10,6 +10,10 @@
   padding-block: 96px !important;
 }
 
+.section-2 {
+  padding-top: 48px;
+}
+
 .img-box {
   width: 50%;
   height: auto;
@@ -78,7 +82,8 @@
 }
 
 .navbar-nav {
-  flex-direction: row !important;
+  margin-top: 12px;
+  flex-direction: row;
   justify-content: end;
 }
 
@@ -109,21 +114,26 @@
   opacity: 0;
   transition: all 2s;
 }
-// .hidden-2 {
-//   opacity: 0;
-//   transition: all 2s;
-//   transition-delay: 0.4s;
-// }
-// .hidden-3 {
-//   opacity: 0;
-//   transition: all 2s;
-//   transition-delay: 0.8s;
-// }
-// .hidden-4 {
-//   opacity: 0;
-//   transition: all 2s;
-//   transition-delay: 1.2s;
-// }
+
 .show {
   opacity: 1;
+}
+
+.py-32 {
+  padding-block: 32px;
+}
+.pb-32 {
+  padding-bottom: 32px;
+}
+
+.mb-64 {
+  margin-bottom: 96px;
+}
+
+.list-none {
+  list-style: none !important;
+}
+
+.bold-me {
+  font-weight: 600;
 }

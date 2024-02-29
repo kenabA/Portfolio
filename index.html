@@ -79,7 +79,7 @@
               Welcome to my website! Here, I present a digital portrayal,
               granting you deeper insights into my persona. Enjoy!
             </p>
-            <a class="btn-1" href="#section-contact">
+            <a class="btn-1 fw-medium" href="#section-contact">
               <span class="me-2"> <i class="fa-solid fa-message"></i></span>Say
               What's Up!
             </a>
@@ -156,7 +156,8 @@
                     href="https://www.linkedin.com/in/kenab-kushal-k-c-37098225a/"
                     target="_blank"
                   >
-                    <span><i class="fa-solid fa-user me-2"></i></span> linked in
+                    <span><i class="fa-solid fa-user me-2"></i></span>
+                    linked in
                   </a>
                 </div>
               </div>
@@ -709,27 +710,37 @@
               class="col-xl-6 ani col-12 bg-primary-lightest form-container rounded-5 p-5"
               data-aos="fade-left"
             >
-              <form action="" class="form">
+              <form
+                class="form"
+                action="https://formspree.io/f/mbjvkybl"
+                method="POST"
+              >
                 <div class="row gy-4 gx-5">
                   <div class="col-lg-6 col-12 col-xl-6">
                     <div class="d-flex gap-2 flex-column">
-                      <label for="fname" class="label">First Name: </label>
+                      <label for="fname" class="label">Full Name: </label>
                       <input
                         type="text"
+                        name="name"
                         id="fname"
                         placeholder="Enter your first name"
                         class="input"
+                        required
+                        autocomplete="off"
                       />
                     </div>
                   </div>
                   <div class="col-lg-6 col-12 col-xl-6">
                     <div class="d-flex gap-2 flex-column">
-                      <label for="lname" class="label">Last Name: </label>
+                      <label for="Subject" class="label">Subject </label>
                       <input
                         type="text"
-                        id="lname"
-                        placeholder="Enter your last name"
+                        id="Subject"
+                        name="subject"
+                        placeholder="Enter the subject"
                         class="input"
+                        required
+                        autocomplete="off"
                       />
                     </div>
                   </div>
@@ -739,8 +750,11 @@
                       <input
                         type="email"
                         id="email"
+                        name="email"
                         placeholder="Enter your email"
                         class="input"
+                        required
+                        autocomplete="off"
                       />
                     </div>
                   </div>
@@ -748,10 +762,12 @@
                     <div class="d-flex gap-2 flex-column">
                       <label for="phone" class="label">Phone Number: </label>
                       <input
-                        type="text"
+                        type="number"
                         id="phone"
+                        name="number"
                         placeholder="Enter your phone number"
                         class="input"
+                        autocomplete="off"
                       />
                     </div>
                   </div>
@@ -759,17 +775,18 @@
                     <div class="d-flex gap-2 flex-column">
                       <label for="msg" class="label">Message: </label>
                       <textarea
-                        name=""
                         id="msg"
+                        name="textarea"
                         cols="30"
                         rows="5"
                         placeholder="Enter your message"
+                        autocomplete="off"
                       ></textarea>
                     </div>
                   </div>
                   <div class="col-lg-12 col-12 col-xl-12">
                     <div class="btn-bx">
-                      <a href="#" class="btn-4 w-100">Send</a>
+                      <button type="submit" class="btn-4 w-100">Send</button>
                     </div>
                   </div>
                 </div>
@@ -820,12 +837,14 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
     <script src="../assets/js/script.js"></script>
+
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        offset: 300,
+        offset: 180,
         duration: 1000,
       });
     </script>

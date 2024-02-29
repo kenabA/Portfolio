@@ -1,0 +1,47 @@
+@use "../custom" as *;
+
+#section-read-more {
+  .main {
+    display: grid;
+    place-items: center;
+  }
+  @include media-breakpoint-down(lg) {
+    .container-fluid {
+      &::after {
+        top: 10px;
+      }
+    }
+  }
+  .container-fluid {
+    position: relative !important;
+    width: 90%;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 100%;
+      background-color: $primary;
+    }
+  }
+
+  .underline {
+    position: relative;
+    padding-bottom: 8px;
+
+    &::after {
+      position: absolute;
+      height: 3px;
+      left: 50%;
+      top: 100%;
+      background-color: map-get($theme-colors, "primary-lighter");
+      content: "";
+      width: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.container-fluid {
+  width: 90%;
+}
