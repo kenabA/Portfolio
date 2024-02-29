@@ -42,3 +42,8 @@ if (viewportWidth < 960) {
     animation.setAttribute("data-aos", "fade-in");
   });
 }
+
+const previewAlert = () => {
+  alert("Not hosted yet");
+  console.log("HLOO");
+};
