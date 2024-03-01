@@ -46,6 +46,5 @@ if (viewportWidth < 960) {
 }
 
 const previewAlert = () => {
-  alert("Not hosted yet");
-  console.log("HLOO");
+  alert("Yet to host");
 };

@@ -1,7 +1,31 @@
 @use "../custom" as *;
 
 #section-projects {
+  .mh {
+    button {
+      width: 10%;
+    }
+  }
+
+  .modal-body {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    width: 600px !important;
+  }
+
   @include media-breakpoint-down(md) {
+    .modal-content {
+      width: 100% !important;
+      img {
+        width: 100% !important;
+      }
+    }
+
     h2 {
       font-size: 36px;
       text-align: center;
@@ -26,6 +50,13 @@
     }
   }
   @include media-breakpoint-down(sm) {
+    .modal-content {
+      width: 100% !important;
+      img {
+        width: 100% !important;
+      }
+    }
+
     h2 {
       font-size: 36px;
       text-align: center;
