@@ -2,6 +2,8 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
+      // console.log(document.querySelector(".loadMoreBtn").innerHTML);
+      // document.querySelector(".loadMoreBtn").innerHTML = "Load Less";
     } else {
       entry.target.classList.remove("show");
     }
